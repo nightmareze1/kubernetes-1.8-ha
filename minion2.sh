@@ -62,7 +62,7 @@ EOF
 
 __EOF__
 
-chmod ~/join.sh
+chmod 777 ~/join.sh
 
 
 
