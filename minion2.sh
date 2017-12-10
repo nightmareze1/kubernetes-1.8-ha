@@ -54,7 +54,7 @@ systemctl daemon-reload && systemctl restart kubelet && systemctl restart docker
 cat <<__EOF__>~/join.sh
 #!/bin/bash
 
-kubeadm join --token <TOKEN> 172.31.12.10:6443 --discovery-token-ca-cert-hash sha256:<hash GENERADO>
+kubeadm join --token 45d1cd.ca68edb2c5666e9b 172.31.12.10:6443 --discovery-token-ca-cert-hash sha256:48b6769938a4e045d0e07712a250566a49d519b248540cc20694ae23a9aeb858
 
 cat <<EOF >> /etc/fstab
 fs-db4df172.efs.us-west-2.amazonaws.com:/ /efs nfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,_netdev 0 0

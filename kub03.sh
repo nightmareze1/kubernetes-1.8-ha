@@ -247,6 +247,8 @@ cd /home/centos
 
 tar -xvf kube.tar
 
+sed -i 's/172.31.27.31:6443/172.31.12.35:6443/g' /home/centos/.kube/config
+
 cp -r .kube /root/
 
 __EOF__

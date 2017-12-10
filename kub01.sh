@@ -346,6 +346,3 @@ chmod 777 ~/kub01.sh
 systemctl restart sshd
 
 bash ~/kub01.sh
-
-
-
