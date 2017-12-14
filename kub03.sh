@@ -241,7 +241,7 @@ systemctl daemon-reload && \
 systemctl restart docker && \
 systemctl restart kubelet 
 
-sleep 15 && sudo systemctl restart docker && systemctl restart kubelet && systemctl status docker && systemctl status kubelet
+sleep 15 && sudo systemctl restart docker && systemctl restart kubelet && systemctl status docker && systemctl status kubelet && systemctl enable docker && systemctl enable kubelet
 
 cd /home/centos
 

@@ -72,5 +72,4 @@ stream {
 }
 __EOF__
 
-systemctl restart nginx && systemctl status nginx
-
+systemctl restart nginx && systemctl status nginx && systemctl enable nginx

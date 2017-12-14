@@ -319,7 +319,7 @@ rsync -av -e ssh --progress kube.tar centos@kub03:/home/centos
 
 rm -f /etc/cni/net.d/*flannel*
 
-sudo systemctl restart docker && systemctl restart kubelet && systemctl status docker && systemctl status kubelet
+sudo systemctl restart docker && systemctl restart kubelet && systemctl status docker && systemctl status kubelet && systemctl enable docker && systemctl enable kubelet
 
 sleep 15 
 
